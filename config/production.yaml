@@ -1,5 +1,5 @@
 Database:
-  connectionString: 'mongodb://localhost/retrace' #TODO
+  connectionString: 'mongodb://localhost/codeshare' #TODO
 
 Server:
   useExpressErrorHandler: false

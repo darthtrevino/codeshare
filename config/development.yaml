@@ -1,5 +1,5 @@
 Database:
-  connectionString: 'mongodb://localhost/retrace'
+  connectionString: 'mongodb://localhost/codeshare'
 
 Server:
   useExpressErrorHandler: true
