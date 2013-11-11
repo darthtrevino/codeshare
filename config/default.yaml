@@ -1,0 +1,11 @@
+Database:
+  maxConnections: 5
+  maxIdleTime: 30
+  logFile: database.log
+  dialect: 'mysql'
+
+Server:
+  useExpressErrorHandler: true
+  version: '0.0.1'
+  listenPort: 9000
+  compressCss: false

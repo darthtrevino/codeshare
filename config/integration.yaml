@@ -1,0 +1,9 @@
+Database:
+  connectionString: 'mongodb://cloudbees:c8d47ea648b87bfb558790132a886d6d@dharma.mongohq.com:10072/KbHP4BNUpPEpQRjeSOhPg'
+
+Server:
+  useExpressErrorHandler: true
+  useLiveReload: false
+  cookieParserSecret: 'so secret!'
+
+ConfigName: 'Integration'

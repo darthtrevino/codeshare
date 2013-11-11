@@ -1,0 +1,24 @@
+{
+  "name": "retrace",
+  "version": "0.0.1",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "components",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular-mocks": "~1.0.7",
+    "restangular": "~1.1.6",
+    "underscore": "~1.5.2"
+  },
+  "dependencies": {
+    "bootstrap": "~2.3.2",
+    "requirejs": "~2.1.8",
+    "angular": "~1.0.7",
+    "angular-cookies": "~1.0.7",
+    "angular-ui-router": "~0.0.1"
+  }
+}

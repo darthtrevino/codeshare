@@ -1,0 +1,10 @@
+Database:
+  connectionString: 'mongodb://localhost/retrace' #TODO
+
+Server:
+  useExpressErrorHandler: false
+  useLiveReload: false
+  cookieParserSecret: 'so secret'
+  compressCss: true
+
+ConfigName: 'Production'

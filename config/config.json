@@ -1,0 +1,20 @@
+{
+  "development": {
+    "username": "root",
+    "password": null,
+    "database": "retrace",
+    "host": "127.0.0.1"
+  },
+  "integration": {
+    "username": "retrace_user",
+    "password": "vlo5STaZzo1ybT",
+    "database": "retrace-integ",
+    "host": "ec2-50-19-213-178.compute-1.amazonaws.com"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "retrace",
+    "host": "127.0.0.1"
+  }
+}

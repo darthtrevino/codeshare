@@ -1,0 +1,10 @@
+Database:
+  connectionString: 'mongodb://localhost/retrace'
+
+Server:
+  useExpressErrorHandler: true
+  useLiveReload: true
+  liveReloadPort: 35729
+  cookieParserSecret: 'so secret!'
+
+ConfigName: 'Development'
