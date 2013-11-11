@@ -44,8 +44,7 @@
     "grunt-jasmine-node-trevino": "git://github.com/darthtrevino/grunt-jasmine-node",
     "request": "~2.27.0",
     "grunt-xsltproc": "~0.2.0",
-    "phantomjs": "~1.9.2-2",
-    "mongodb": "~1.3.19"
+    "phantomjs": "~1.9.2-2"
   },
   "dependencies": {
     "express": "3.x",
@@ -66,7 +65,10 @@
     "oauth2orize": "~1.0.0",
     "passport-http": "~0.2.2",
     "bcrypt": "~0.7.7",
-    "share": "~0.7.0-alpha9"
+    "share": "~0.6.x",
+    "browserchannel": "~1.0.8",
+    "mongodb": "~1.3.19",
+    "redis": "~0.9.0"
   },
   "scripts": {
     "prestart": "grunt",

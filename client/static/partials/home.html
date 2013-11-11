@@ -1,2 +1,31 @@
 <h1>CodeShare</h1>
 
+<!--<script src="/channel/bcsocket.js"></script>-->
+
+<div id="editor" ui-ace="{
+    useWrapMode : true,
+    showGutter: false,
+    theme:'solarized_dark',
+    mode: 'java',
+    onLoad: aceLoaded,
+    onChange: aceChanged
+}" style="height: 200px">
+
+</div>
+
+<script type='text/javascript' src='share-ace.js'></script>
+<script>
+    var editor = ace.edit("editor");
+    console.log("!!!!!!!Loading ShareJS", sharejs);
+
+    sharejs.open('hello', 'text', function(error, doc) {
+        console.log("!!!!!!IN OPEN");
+        if (error) {
+            console.log("!!!!!!Error loading document: ", error);
+        } else {
+            console.log("!!!!!!Attaching Ace editor to document");
+            doc.attach_ace(editor);
+        }
+    });
+</script>
+

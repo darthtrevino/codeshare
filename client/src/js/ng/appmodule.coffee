@@ -13,6 +13,7 @@ define [
     # Angular/Third Party Modules
     'ngCookies'
     'ui.state'
+    'ui.ace'
     'restangular'
 
     # Application Modules
