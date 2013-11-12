@@ -1,0 +1,30 @@
+<div ng-controller="EditorController">
+    <div class="row">
+        <div class="col-md-12 col-lg-12">
+            <div id="editor" ui-ace="{
+                    useWrapMode : true,
+                    showGutter: true,
+                    theme:'solarized_dark',
+                    mode: 'java',
+                    onLoad: aceLoaded,
+                    onChange: aceChanged
+                }" style="min-height: 500px">
+            </div>
+        </div>
+
+    </div>
+    <div class="row" style="margin: 10px;">
+        <button type="button" class="btn btn-success pull-right" ng-click="compile()">Compile</button>
+    </div>
+</div>
+
+<script>
+    var editor = ace.edit("editor");
+    sharejs.open('hello', 'text', function(error, doc) {
+        if (error) {
+            console.log("error loading document: ", error);
+        } else {
+            doc.attach_ace(editor);
+        }
+    });
+</script>

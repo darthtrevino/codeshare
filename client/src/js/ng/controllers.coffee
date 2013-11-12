@@ -3,5 +3,6 @@
 #
 define [
   './controllers/module'
+  './controllers/editor-controller'
 ], ->
   console.log "Ng-Controllers Loaded"

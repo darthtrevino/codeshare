@@ -15,7 +15,7 @@
     "underscore": "~1.5.2"
   },
   "dependencies": {
-    "bootstrap": "~2.3.2",
+    "bootstrap": "3.x",
     "requirejs": "~2.1.8",
     "angular": "~1.0.7",
     "angular-cookies": "~1.0.7",

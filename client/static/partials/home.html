@@ -1,24 +1,10 @@
-<h1>CodeShare</h1>
-<h3>Collaborative Software Editing</h3>
+<nav class="navbar navbar-default" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <div class="container">
+            <a class="navbar-brand" href="#">CodeShare <small>Collaborative Software</small></a>
+        </div>
+    </div>
+</nav>
 
-<div id="editor" ui-ace="{
-    useWrapMode : true,
-    showGutter: true,
-    theme:'solarized_dark',
-    mode: 'java',
-    onLoad: aceLoaded,
-    onChange: aceChanged
-}" style="height: 200px">
-
-</div>
-<script>
-    var editor = ace.edit("editor");
-    sharejs.open('hello', 'text', function(error, doc) {
-        if (error) {
-            console.log("error loading document: ", error);
-        } else {
-            doc.attach_ace(editor);
-        }
-    });
-</script>
-
+<div ng-include src="'partials/editor.html'"/>

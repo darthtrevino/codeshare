@@ -50,7 +50,6 @@ options =
 
 options =
   db: { type: 'none' }
-  #browserChannel: { cors: '*' }
   browserChannel: {}
   auth: (client, action) ->
     if (action.name == 'submit op' && action.docName.match(/^readonly/))
