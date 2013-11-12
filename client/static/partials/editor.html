@@ -8,23 +8,34 @@
                     mode: 'java',
                     onLoad: aceLoaded,
                     onChange: aceChanged
-                }" style="min-height: 500px">
+                }" style="min-height: 400px">
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 col-lg-6" style="min-height: 100px">
+            Compilation Output:
+            <div id="compileOutput" ui-ace="{
+                    useWrapMode : true,
+                    showGutter: false,
+                    theme:'solarized_dark',
+                    mode: 'text'
+                }" style="min-height: 200px">
             </div>
         </div>
 
+        <div class="col-md-6 col-lg-6" style="min-height: 100px">
+            Run Output:
+            <div id="runOutput" ui-ace="{
+                    useWrapMode : true,
+                    showGutter: false,
+                    theme:'solarized_dark',
+                    mode: 'text'
+                }" style="min-height: 200px">
+            </div>
+        </div>
     </div>
     <div class="row" style="margin: 10px;">
         <button type="button" class="btn btn-success pull-right" ng-click="compile()">Compile</button>
     </div>
 </div>
-
-<script>
-    var editor = ace.edit("editor");
-    sharejs.open('hello', 'text', function(error, doc) {
-        if (error) {
-            console.log("error loading document: ", error);
-        } else {
-            doc.attach_ace(editor);
-        }
-    });
-</script>

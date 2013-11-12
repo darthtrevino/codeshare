@@ -9,6 +9,10 @@ makeTempDirs = ->
   tryMakeDir = (dirName) ->
     if not fs.existsSync(dirName) then fs.mkdirSync(dirName)
 
+  if fs.exists(__dirname + "/tmp/java")
+    files = fs.readdirSync(__dirname + "/tmp/java")
+    fs.unlinkSync(f) for f in files
+
   tryMakeDir(__dirname + "/tmp")
   tryMakeDir(__dirname + "/tmp/java")
   console.log "created temp directories"
@@ -20,7 +24,7 @@ writeJavaFile = (java) ->
 compileJava = ->
   defered = Q.defer()
   output = ""
-  compile = spawn('javac', ["#{__dirname}/tmp/java/Main.java", "-verbose"])
+  compile = spawn('javac', ["#{__dirname}/tmp/java/Main.java"])
   compile.stdout.on('data', (data) -> output += data)
   compile.stderr.on('data', (data) -> output += data)
   compile.stdout.on('close', -> defered.resolve(output))
